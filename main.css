@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	font-family: 'calibri', sans-serif;
+	font-size: 1.2rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100vh;
+	margin:auto 0%;
+}
+
+.container .card {
+	width: 300px;
+	transform: skewY(-10deg);
+	position: relative;
+	margin: 50px;
+}
+
+.container .card:before {
+	content: '';
+	position: absolute;
+	transform-origin: bottom;
+	top:-6%;
+	left: .5%;
+	width: 100%;
+	height: 20px;
+	background-color: #575A5E;
+	transform: skewX(45deg);
+	opacity: .5;
+}
+
+.container .card:after {
+	content: '';
+	position: absolute;
+	top:-6%;
+	left: -6%;
+	width: 18px;
+	height: 50%;
+	background-color: #575A5E;
+	transform: skewY(45deg);
+	transform-origin: left;
+	opacity: .8;
+	border-bottom:149px solid #EEE5E9;
+}
+
+.container .card .card-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #575A5E;
+	height: 150px;
+}
+
+.container .card .card-image i {
+	padding: 7px;
+	font-size: 4rem;
+	color:#F4F7F5;
+}
+
+.container .card .card-image h3 {
+	padding: 7px;
+	color:#F4F7F5;
+}
+
+.container .card .card-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(transparent, transparent, rgba(0,0,0,.3));
+	color:#A7A2A9;
+	height: 150px;
+	padding: 20px;
+	position: relative;
+	z-index: -2;
+}
+
+.container .card .card-text:before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background-color: rgba(0,0,0,.1);
+	z-index: -1;
+	opacity: .3;
+	transform: skewX(45deg);
+	transform-origin: bottom;
+}
+
+
+/* Card Code */
+.container .card:nth-child(3) .card-image { background-color: #1098F7; }
+.container .card:nth-child(3):before { background-color: #1098F7; }
+.container .card:nth-child(3):after { background-color: #1098F7; }
+
+/* Card CSS3 */
+.container .card:nth-child(2) .card-image { background-color: #4A6FA5;}
+.container .card:nth-child(2):before { background-color: #4A6FA5; }
+.container .card:nth-child(2):after { background-color: #4A6FA5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
